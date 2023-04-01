@@ -1,5 +1,7 @@
 .sidebar {
 	padding-top: 10px;
+	position: sticky;
+	top: 0;
 }
 .spent-time {
 	font-weight: 700;
@@ -20,4 +22,13 @@
     padding: 30px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
+	overflow-y: scroll;
+}
+.title{
+	padding: 20px;
+	margin: 20px 10px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	line-height: 100%;
+	font-size: 16px;
 }

@@ -5,11 +5,28 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
+    const [bookmarks, setBookmarks] = useState([]);
+    const [readmarks, setReadmarks] = useState(0);
+    const [titles, setTitles] = useState([]);
     useEffect(() => {
         fetch('knowledge.json')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
+
+    let title = [];
+    const handleBookmark = (blog) =>{
+        const newBookmark = [...bookmarks, blog];
+        setBookmarks(newBookmark);
+        const title = blog.title;
+        const newTitle = [...titles, title]
+        setTitles(newTitle);
+    }
+    const handleMarkAsRead = (time) => {
+        console.log(readmarks);
+        const newTime = parseInt(readmarks) + time;
+        setReadmarks(newTime);
+    }
     return (
         <div className='body'>
             <div className="blogs">
@@ -18,12 +35,18 @@ const Blogs = () => {
                 <Blog
                     key={blog.id}
                     blog = {blog}
+                    handleBookmark = {handleBookmark}
+                    handleMarkAsRead = {handleMarkAsRead}
                 ></Blog>
                 )
             }
             </div>
             <div className="sidebar">
-                <Sidebar></Sidebar>
+                <Sidebar
+                    bookmarks = {bookmarks}
+                    spentTime = {readmarks}
+                    titles = {titles}
+                ></Sidebar>
             </div>
             
         </div>
