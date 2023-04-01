@@ -19,7 +19,7 @@
     padding: 0;
     justify-content: space-between;
 }
-.blog-special-info-right{
+.blog-special-info-left{
     display: flex;
 }
 .blog-special-info img{
@@ -34,7 +34,25 @@
 }
 .smaller-text{
     font-size: 12px;
+    color: gray;
+}
+.blog-special-info-right{
+    display: flex;
+    align-items: center;
 }
 .read-time{
     text-align: right;
+    padding-right: 8px;
+}
+.different-btn{
+    background-color: white;
+    padding: 0;
+    border: none;
+}
+.blog-title{
+    padding-right: 130px;
+}
+.read-btn{
+    font-size: 14px;
+    color: #6047EC;
 }
