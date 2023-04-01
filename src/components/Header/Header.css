@@ -9,21 +9,24 @@
     font-size: 32px;
     color: black;
 }
-.navbar{
+.navbar, .mobile-navbar{
     display: flex;
 }
-.navbar li{
+.navbar li, .mobile-navbar li{
     list-style-type: none;
     padding: 20px 30px;
 }
-.navbar li:hover{
+.navbar li:hover, .mobile-navbar li:hover{
     background-color: lightgray;
     border-radius: 10px;
 }
-.navbar li a{
+.navbar li a, .mobile-navbar li a{
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+.mobile-navbar{
+    display: none;
 }
 .image img{
     border-radius: 50%;
@@ -34,3 +37,24 @@ hr{
     border-top: lightgray;
     margin: 0 100px;
 }
+
+/* Mobile responsive */
+@media only screen and (max-width: 576px) {
+    .header {
+        margin: 20px;
+    }
+    .header h2{
+        font-size: 22px;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile-navbar{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .mobile-navbar li{
+        padding: 5px 20px;
+    }
+  }

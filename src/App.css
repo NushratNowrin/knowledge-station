@@ -5,3 +5,9 @@
 .App{
   max-width: 1280px;
 }
+@media only screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    margin: auto 0;
+  }
+}
