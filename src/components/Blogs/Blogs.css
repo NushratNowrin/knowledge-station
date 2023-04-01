@@ -3,3 +3,11 @@
     grid-template-columns: 2fr 1fr;
     margin: 20px 100px;
 }
+
+/* Mobile responsive */
+@media only screen and (max-width: 576px) {
+    .body{
+        display: block;
+        margin: 20px;
+    }
+}

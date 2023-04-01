@@ -58,3 +58,13 @@
     padding-bottom: 0px;
     border-bottom: 1px solid #6047EC;
 }
+
+/* Mobile responsive */
+@media only screen and (max-width: 576px) {
+    .blog{
+        margin-right: 0;
+    }
+    .blog-title {
+        padding-right: 0px;
+    }
+}
