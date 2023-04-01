@@ -1,0 +1,9 @@
+.qna-div{
+    margin: 50px 40px;
+    padding: 30px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+}
+.qna-heading{
+    text-align: center;
+}
