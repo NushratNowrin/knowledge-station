@@ -6,7 +6,7 @@ const QnA = () => {
 		<div className="qna-div">
 			<h2 className="qna-heading">JavaScript Basic Question & Answer</h2>
 			<div>
-				<div className='qna-div'>
+				<div className='qna-div qna-child'>
 					<h4 className='question'>
 						1. What are the difference Between Props &State?
 					</h4>
@@ -24,7 +24,7 @@ const QnA = () => {
 						component.
 					</p>
 				</div>
-				<div className='qna-div'>
+				<div className='qna-div qna-child'>
 					<h4 className='question'>2. How works useState() in react?</h4>
 					<p className='answer'>
 						Hooks are special functions which let you "hook into" different
@@ -37,7 +37,7 @@ const QnA = () => {
 						the state variable and trigger React to render the component again.
 					</p>
 				</div>
-				<div className='qna-div'>
+				<div className='qna-div qna-child'>
 					<h4 className='question'>
 						3.What are the purpose of useEffect other than fetching data?
 					</h4>
@@ -55,7 +55,7 @@ const QnA = () => {
 						</ul>
 					</p>
 				</div>
-				<div className='qna-div'>
+				<div className='qna-div qna-child'>
 					<h4 className='question'>How does React Work?</h4>
 					<p className='answer'>React works by using a component-based architecture and a virtual DOM to manage the state and rendering of components. When a component's state changes, React updates the virtual DOM and calculates the differences with the previous virtual DOM, and then updates the actual DOM with only the necessary changes. React also provides lifecycle methods to control the behavior of components at different points in their lifecycle.</p>
 				</div>
