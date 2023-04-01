@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css'
 import Blog from '../Blog/Blog';
 import Sidebar from '../Sidebar/Sidebar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -16,11 +18,15 @@ const Blogs = () => {
 
     let title = [];
     const handleBookmark = (blog) =>{
+        if(bookmarks.indexOf(blog) !== -1){
+            toast('This Bookmark already added');
+        }
         const newBookmark = [...bookmarks, blog];
         setBookmarks(newBookmark);
         const title = blog.title;
         const newTitle = [...titles, title]
         setTitles(newTitle);
+        
     }
     const handleMarkAsRead = (time) => {
         console.log(readmarks);

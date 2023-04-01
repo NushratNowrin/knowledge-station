@@ -2,6 +2,8 @@ import React from "react";
 import "./Blog.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blog = (props) => {
 	const { id, name, date, time, title, img, authorImg } = props.blog;
@@ -23,6 +25,7 @@ const Blog = (props) => {
 					<button className="different-btn" onClick={() => handleBookmark(props.blog)}>
 						<FontAwesomeIcon icon={faBookmark} />
 					</button>
+					<ToastContainer />
 				</div>
 			</div>
             <h2 className="blog-title">{title}</h2>
