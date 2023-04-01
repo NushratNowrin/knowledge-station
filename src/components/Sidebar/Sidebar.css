@@ -1,3 +1,23 @@
-.sidebar{
-    padding-top: 20px;
+.sidebar {
+	padding-top: 10px;
+}
+.spent-time {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 100%;
+	color: #6047ec;
+	background: rgba(96, 71, 236, 0.1);
+	border: 1px solid #6047ec;
+	border-radius: 8px;
+	text-align: center;
+}
+.bookmark-blogs {
+    margin-top: 24px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 100%;
+	color: #111111;
+    padding: 30px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
 }

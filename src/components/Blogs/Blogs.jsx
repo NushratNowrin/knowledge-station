@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Blogs.css'
 import Blog from '../Blog/Blog';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -22,7 +23,7 @@ const Blogs = () => {
             }
             </div>
             <div className="sidebar">
-            sidebar
+                <Sidebar></Sidebar>
             </div>
             
         </div>

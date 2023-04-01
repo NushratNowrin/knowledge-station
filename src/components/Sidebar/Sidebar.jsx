@@ -3,11 +3,11 @@ import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div>
-            <div>
+        <div className='sidebar'>
+            <div className='spent-time'>
                 <h4>Spent time on read : </h4>
             </div>
-            <div>
+            <div className='bookmark-blogs'>
                 <h4>Bookmark Blogs : </h4>
             </div>
         </div>
