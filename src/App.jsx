@@ -1,18 +1,15 @@
 
 import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <div className="App">
-      
+        <Header></Header>
+        <Blogs></Blogs>
     </div>
   )
 }
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Porgramming-Hero-web-course/b7a8-knowledge-cafe-NushratNowrin.git
-// git push -u origin main
 export default App
